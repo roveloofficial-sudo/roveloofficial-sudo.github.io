@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>ROVELO Management</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Hanken+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F4F5F7;--surface:#fff;--ink:#111;--ink2:#4B5563;--ink3:#6B7280;--border:#E5E7EB}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Geist,system-ui,sans-serif;min-height:100vh;display:flex;flex-direction:column}
+header{padding:28px max(16px,5vw);display:flex;align-items:center;gap:12px}
+header img{height:30px}
+header span{font-size:12px;letter-spacing:.2em;color:var(--ink3);font-weight:600}
+main{flex:1;padding:12px max(16px,5vw) 48px;max-width:1100px;width:100%;margin:0 auto}
+h1{font-family:'Hanken Grotesk',sans-serif;font-size:clamp(28px,4vw,40px);margin:24px 0 8px;text-wrap:balance}
+p.sub{color:var(--ink2);margin:0 0 32px;font-size:15px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:24px;text-decoration:none;color:inherit;display:flex;flex-direction:column;gap:10px;transition:border-color .15s,transform .15s}
+a.card:hover{border-color:var(--ink);transform:translateY(-2px)}
+.ic{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;font-size:22px}
+.card h2{font-family:'Hanken Grotesk',sans-serif;font-size:19px;margin:6px 0 0}
+.card p{margin:0;color:var(--ink3);font-size:14px;line-height:1.5}
+.tag{align-self:flex-start;font-size:12px;font-weight:600;padding:4px 10px;border-radius:999px;margin-top:auto}
+.on{background:#DCFCE7;color:#166534}.soon{background:#F3F4F6;color:var(--ink3)}
+.card.dis{opacity:.7}
+footer{padding:20px;text-align:center;color:var(--ink3);font-size:12px}
+</style>
+</head>
+<body>
+<header><img src="assets/logo-dark.png" alt="ROVELO"><span>MANAGEMENT</span></header>
+<main>
+  <h1>Pusat aplikasi ROVELO</h1>
+  <p class="sub">Pilih modul yang ingin dibuka. Login dilakukan di masing-masing modul.</p>
+  <div class="grid">
+    <a class="card" href="/inventory/">
+      <div class="ic" style="background:#EEF2FF">📦</div>
+      <h2>Inventory</h2>
+      <p>Stok, barang masuk &amp; keluar, import marketplace, PO, RTS, dan stock opname.</p>
+      <span class="tag on">Aktif</span>
+    </a>
+    <div class="card dis">
+      <div class="ic" style="background:#ECFDF5">💰</div>
+      <h2>Finance</h2>
+      <p>Pemasukan, pengeluaran, dan laporan keuangan.</p>
+      <span class="tag soon">Segera hadir</span>
+    </div>
+    <div class="card dis">
+      <div class="ic" style="background:#FFF7ED">👥</div>
+      <h2>HRD</h2>
+      <p>Data karyawan, absensi, dan penggajian.</p>
+      <span class="tag soon">Segera hadir</span>
+    </div>
+  </div>
+</main>
+<footer>© ROVELO · management-rovelo.my.id</footer>
+</body>
+</html>
